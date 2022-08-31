@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+echo 'ffc-ahwr-farmer-apply' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ahwr-farmer-apply/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ahwr-farmer-claim' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ahwr-farmer-claim/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ahwr-application' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ahwr-application/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ahwr-backoffice' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ahwr-backoffice/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ahwr-event' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ahwr-event/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
