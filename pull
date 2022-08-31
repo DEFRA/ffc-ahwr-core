@@ -5,7 +5,7 @@ projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; p
 show_help() {
   echo "
     Usage: path/to/ffc-ahwr-core [OPTION...]
-    Run git pull in payment services.
+    Run git pull in vet vists services.
     Options:
       -h, --help       display this help text
     "

@@ -5,7 +5,7 @@ projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; p
 show_help() {
   echo "
     Usage: path/to/ffc-ahwr-core [OPTION...]
-    Open payment services in VS Code.
+    Open vet vists services in VS Code.
     Options:
       -f, --functions   include Azure Function Apps
       -h, --help       display this help text
